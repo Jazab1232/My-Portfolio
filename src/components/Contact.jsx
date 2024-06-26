@@ -1,9 +1,29 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import contactImg from '../assets/profile.png'
 import '../styles/contact.css'
 // import { Link } from 'react-router-dom'
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_cvmk18k', 'template_603oo1f', form.current, {
+                publicKey: 'j5JpJIuKqpxM7plRu',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    e.target.reset()
+                    alert('E-mail sent')
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
     return (
         <div className="contactSection" id='contact'>
             <div className="formHeading">
@@ -26,26 +46,24 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="contactForm">
-
-                    <div className="formSection">
-
+                    <form  className='formSection' ref={form} onSubmit={sendEmail}>
                         <div className='formTop' style={{ display: 'flex', width: '100%', gap: '5px' }} >
 
                             <div className="nameInput topInput" style={{ display: 'flex', flexDirection: 'column', width: '47%' }}>
                                 <label htmlFor="name" >YOUR NAME</label>
-                                <input type="text" id='name' placeholder='Name *' /></div>
+                                <input type="text" id='name' placeholder='Name *' name='your_name' /></div>
                             <div className="emailInput topInput" style={{ display: 'flex', flexDirection: 'column', width: '47%' }}>
                                 <label htmlFor="email">YOUR E-MAIL</label>
-                                <input type="text" id='email' placeholder='Email *' />
+                                <input type="text" id='email' placeholder='Email *'  name='your_email'/>
                             </div>
                         </div>
                         <label htmlFor="subject">SUBJECT</label>
                         <input type="text" id='subject' placeholder='Subject *' />
-                        <label htmlFor="message">MESSAGE</label>
-                        <textarea name="" id="message" rows={20} placeholder='Your Message *'></textarea>
+                        <label htmlFor="message" >MESSAGE</label>
+                        <textarea name="message" id="message" rows={20} placeholder='Your Message *'></textarea>
 
-                        <button className='btn' style={{ marginTop: '20px', marginBottom: '30px' }}>SEND MESSAGE</button>
-                    </div>
+                        <button type='submit' value='send' className='btn' style={{ marginTop: '20px', marginBottom: '30px' }}>SEND MESSAGE</button>
+                    </form>
                 </div>
             </div>
         </div>
