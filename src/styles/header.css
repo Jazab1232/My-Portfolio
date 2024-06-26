@@ -13,6 +13,17 @@
     z-index: 1;
     top: 0px;
 }
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoImg {
+    height: 40px;
+    margin-inline: 10px;
+    cursor: pointer;
+}
+
 
 .header h1 {
     color: #4482F3;
@@ -71,6 +82,10 @@
     .menu {
         display: inline-block;
     }
+
+    .logoImg{
+        height: 35px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -86,10 +101,13 @@
     /* .menu {
         align-self: flex-end;
     } */
+    .logoImg {
+        height: 25px;
+    }
 }
 
 @media (max-width: 480px) {
-    
+
 
     .header h1 {
         font-size: 25px;
@@ -100,5 +118,9 @@
         font-size: 20px;
         padding: 2px 10px;
         margin: 0 10px 0 0;
+    }
+
+    .logoImg {
+        height: 20px;
     }
 }

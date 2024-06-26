@@ -10,9 +10,9 @@ export default function ({ menuClicked, setMenuClicked }) {
   return (
 
     <div className='header'>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div className='logo' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <Link to='home' activeClass='active' spy={true} smooth={500} offset={-100} >
-          <img src={logo} alt="" style={{ width: '60px', marginInline: '10px', cursor: 'pointer' }} /></Link>
+          <img className='logoImg' src={logo} alt=""  /></Link>
         <Link to='home' activeClass='active' spy={true} smooth={500} offset={-100} >
           <h1>JAZAB</h1>
         </Link>
