@@ -1,0 +1,216 @@
+.mainSkills {
+    background: linear-gradient(to left, #050D16, #0D233B);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.skillSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 40px;
+
+}
+
+.mainSkills h1 span {
+    color: white;
+}
+
+.heading {
+    color: #4482F3;
+    font-size: 60px;
+}
+
+.eduSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 10px 0 0 50px;
+}
+
+.edubox {
+    width: 45%;
+    height: 200px;
+
+
+}
+
+.edubox span {
+    color: #4482F3;
+    padding: 10px 20px;
+    border: 1px solid #4482F3;
+    border-radius: 5px;
+
+}
+
+.edubox h1 {
+    font-size: 30px;
+    margin: 20px 0;
+    color: white;
+}
+
+.edubox p {
+    color: white;
+    font-size: 16px;
+}
+
+.skillBar {
+    width: 40%;
+    height: 60px;
+    background-color: #050D16;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 20px;
+    margin: 10px 50px;
+    color: white;
+
+
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Remove default thumb */
+    appearance: none;
+    width: 0;
+    /* Remove thumb width */
+    height: 0;
+    /* Remove thumb height */
+    background: transparent;
+    /* Transparent background */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+.skillBar label {
+    color: white;
+    font-size: 20px;
+
+}
+
+.skillBar input {
+    margin: 0 20px 0 0px;
+    width: 100%;
+    border-radius: 0px;
+    height: 10px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    outline: none;
+    opacity: 1;
+
+}
+
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #007bff, #007bff) no-repeat;
+    background-size: calc(var(--value, 80) * 1%), 100%;
+}
+
+
+
+
+
+/* responsive-------------------------------------------------------- */
+@media (max-width:992px) {
+    .mainSkills {
+        padding: 3vw 0 0 4vw;
+
+    }
+
+    .eduSection {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .edubox {
+        width: 90%;
+    }
+
+    .skillSection {
+        width: 100%;
+    }
+
+    .skillBar {
+        width: 90%;
+        margin: 10px 10px;
+    }
+
+    .skillBar input {
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .mainSkills {
+        padding: 3vw 0 0 2vw;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .eduSection {
+
+        display: flex;
+        flex-direction: column;
+        margin: 10px 2vw;
+        justify-content: flex-start;
+    }
+
+    .edubox {
+        width: 80%;
+    }
+
+    .skillSection {
+        width: 100%;
+        padding: 0;
+    }
+
+    .skillBar {
+        width: 90%;
+        margin: 10px 10px;
+    }
+
+    .skillBar input {
+        width: 90%;
+    }
+
+}
+
+@media (max-width:580px) {
+    .heading {
+        font-size: 40px;
+    }
+    .skillSection{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:480px) {
+    .heading {
+        font-size: 32px;
+        padding: 10px 0;
+    }
+    .skillSection{
+        margin-top: 50px;
+    }
+}

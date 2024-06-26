@@ -1,0 +1,168 @@
+.ProjectSection {
+    padding: 40px 40px ;
+    max-width: 100vw;
+    background: linear-gradient(to left, #0A192E, #132D4F);
+    min-height: 90vh;
+}
+
+.projectContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0 0 40 0px; */
+}
+
+.projectContent h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.projectContent p {
+    background-color: #122C51;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+
+}
+
+.card {
+    border: 1px solid #ffffff;
+    width: 350px;
+    height: 280px;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+
+}
+
+.card img {
+
+    width: 100%;
+    border-radius: 3px;
+    /* margin-bottom: 10px; */
+
+}
+
+.card p {
+    font-size: 25px;
+    font-weight: 900;
+    margin: 10px 0;
+}
+
+.card span {
+    font-size: 16px;
+    opacity: .8;
+}
+
+.ProjectCard {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* Card 2 CSS */
+.card2{
+    width: 370px;
+    height: 340px;
+    border: 15px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+.card2 img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    /* border-radius: 7px; */
+}
+.card2 img:hover {
+    transform: scale(1.1);
+}
+.imgBox2{
+    border-radius: 7px;
+    height: 240px;
+    overflow: hidden;
+}
+.card2 h3{
+    font-size: 20px;
+    font-weight: 900;
+}
+.card2 p{
+    font-size: 16px;
+    opacity: .9;
+}
+/* responsive--------------------------------------- */
+
+@media (max-width:992px) {
+    .ProjectSection {
+        padding: 40px 20px 40px 50px;
+        max-width: 100vw;
+        background: linear-gradient(to left, #0A192E, #132D4F);
+        min-height: 90vh;
+    }
+
+    .projectContent h1 {
+        color: white;
+        font-size: 50px;
+    }
+    .ProjectCard {
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+}
+@media (max-width:768px) {
+    .ProjectSection {
+        max-width: 100vw;
+        padding: 40px 4vw 40px 4vw;
+        
+    }
+
+    .projectContent h1 {
+        color: white;
+        font-size: 45px;
+    }
+    .card {
+        width: 450px;
+        height: 380px;
+    
+    }
+
+}
+@media (max-width:580px) {
+    .ProjectSection {
+        padding: 40px 3vw 40px 3vw;
+        width: 100vw;
+       
+    }
+
+    .projectContent h1 {
+        color: white;
+        font-size: 40px;
+    }
+    .card {
+        width: 350px;
+        height: 280px;
+    
+    }
+
+}
+@media (max-width:580px) {
+  
+
+    .projectContent h1 {
+        color: white;
+        font-size: 32px;
+    }
+   
+
+}

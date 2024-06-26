@@ -1,0 +1,283 @@
+.contactSection {
+    /* padding: 0 100px; */
+    background: linear-gradient(to left, #050D16, #0D233B);
+    position: relative;
+    width: 100vw;
+
+}
+a{
+    text-decoration: none;
+}
+
+.formHeading {
+    background-color: #0A1D36;
+    height: 200px;
+    width: 100%;
+    color: white;
+    padding: 40px 0 0 450px;
+}
+
+.formHeading h1 {
+    font-size: 35px;
+}
+
+.formHeading p {
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.contactInfo {
+    width: 30%;
+
+}
+
+.contactCard {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(to left, #050D16, #050D16);
+    padding: 0 40px 0 0;
+    /* margin: 0 0 0 100px; */
+    position: absolute;
+    top: 50px;
+}
+
+
+.contactCard img {
+    height: 100%;
+
+}
+
+.socialInfo {
+    position: absolute;
+    margin: 0 0 0 90px;
+    top: 400px;
+    left: 70px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.socialInfo i {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    background-color: #3F77F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contactBox {
+    margin: 0 0px;
+    display: flex;
+    gap: 40px;
+    background-color: #11294C;
+    max-width: 100vw;
+    padding: 0 0 0 100px;
+
+}
+
+.contactForm {
+    width: 60%;
+}
+
+.formSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 12px;
+    margin: 0 0 0 40px;
+
+}
+
+.formSection label {
+    margin: 20px 0 5px 0;
+}
+
+.formSection textarea {
+    width: 90%;
+    border: 1px solid #86aedc;
+    height: 200px;
+    background-color: #1C3555;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    color: white;
+    padding: 10px 0 0 15px;
+
+}
+
+.formSection input {
+    border: 1px solid #86aedc;
+    width: 90%;
+    height: 40px;
+    background-color: #1C3555;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    padding: 0 0 0 15px;
+}
+
+
+/* Responsive------------------------------------------------------- */
+
+@media (max-width:992px) {
+    .contactCard {
+        display: none;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 0 0 4vw;
+    }
+
+    .socialInfo {
+        position: unset;
+        margin: 0;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .formSection {
+        width: 100%;
+        margin: 0;
+        padding: 0 0 0 4vw;
+    }
+
+    .contactForm {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .formHeading {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+
+
+    .formSection input {
+        width: 100%;
+    }
+
+    .formSection textarea {
+        width: 100%;
+    }
+
+    .formTop {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .topInput {
+        width: 50%;
+    }
+
+    .formSection button {
+        align-self: center;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .formTop {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .formSection{
+        
+        margin: 0;
+        padding: 0 0 0 2vw;
+    }
+.contactInfo{
+    width: 1000px;
+}
+ .contactBox{
+    gap: 0;
+    padding-bottom: 40px;
+ }   
+    
+
+    .formHeading {
+        height: 160px;
+    }
+
+    .formHeading h1 {
+        font-size: 30px;
+    }
+
+    .formHeading p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .topInput{
+        width: 100%;
+    }
+    #name {
+        width: 84vw;
+    }
+
+    #email {
+        width: 84vw;
+    }
+}
+
+@media (max-width:570px) {
+    .formHeading {
+        padding-top: 20px;
+        height: 140px;
+    }
+
+    .formHeading h1 {
+        font-size: 30px;
+    }
+
+    .formHeading p {
+        font-size: 16px;
+        line-height: 25px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:480px) {
+    .formTop{
+        width: 100%;
+
+    }
+    
+    .topInput{
+        width: 100%;
+    }
+    .topInput input{
+       min-width: 100%;
+    }
+    .formSection{
+        
+        margin: 0;
+        padding: 0 0 0 2vw;
+    }
+    /* #name {
+        width: 81vw;
+    }
+
+    #email {
+        width: 81vw;
+    } */
+}
