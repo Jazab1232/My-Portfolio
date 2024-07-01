@@ -10,16 +10,17 @@ export default function Skills() {
                 <div className="edubox">
                     <span>2019-2023</span>
                     <h1>UNIVERSITY OF AGRICULTURE</h1>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        aut odit aut fugit sed thisnquia consequuntur magni dolores eos
-                        qui ratione voluptatem</p>
+                    <p>Earned a Bachelor's degree in Software Engineering from the University <br />
+                        of Agriculture. This program provided a strong foundation in computer
+                        science principles, software development and preparing me for a successful
+                        career in front-end development.</p>
                 </div>
-                <div className="edubox">
-                    <span>2014-2024</span>
-                    <h1>UNIVERSITY OF AGRICULTURE</h1>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                        aut odit aut fugit sed thisnquia consequuntur magni dolores eos
-                        qui ratione voluptatem</p>
+                <div className="edubox ">
+                    <span>2024-2024</span>
+                    <h1>APNA COLLEGE</h1>
+                    <p> Completed a Front-End Web Development course, specializing in React.js.
+                        This intensive program honed my skills in building interactive and user-friendly
+                        web applications</p>
                 </div>
 
             </div>
@@ -48,7 +49,7 @@ export default function Skills() {
                 </div>
                 <div className="skillBar">
                     <h3 htmlFor="html">REACT</h3>
-                    <div style={{ display: 'flex', alignItems: 'center' }}><input type="range"  min="0"
+                    <div style={{ display: 'flex', alignItems: 'center' }}><input type="range" min="0"
                         max="10"
                         value={8} />
                         <label htmlFor="">8/10</label></div>
@@ -56,10 +57,10 @@ export default function Skills() {
                 <div className="skillBar">
                     <h3 htmlFor="html">GIT & GITHUB</h3>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <input type="range"  min="0"
-                        className='github'
-                        max="10"
-                        value={7} />
+                        <input type="range" min="0"
+                            className='github'
+                            max="10"
+                            value={7} />
                         <label htmlFor="">7/10</label></div>
                 </div>
             </div>

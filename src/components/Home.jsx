@@ -9,9 +9,10 @@ export default function Home() {
             <div className="mainContent">
                 <h1 className='heading1'>HAY! I'M JAZAB</h1>
                 <h1 className='heading2'>I'M A DEVELOPER</h1>
-                <p>Yet bed any for travelling assistance indulgence unpleasing.
-                    Not thoughts all exercise blessing. Indulgence way everything joy
-                    alteration boisterous the attachment.</p>
+                <p>As a front-end developer, I'm passionate about crafting exceptional web applications
+                    that not only looks beautiful but also improves the lives of those around me.
+                    {/* I believe in the power of technology to bridge cultures and create positive change. */}
+                    </p>
 
                 <div className="homeButtons">
                     <button className='btn homeBtn'>

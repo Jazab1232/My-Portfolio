@@ -112,7 +112,7 @@ a{
     resize: none;
     outline: none;
     color: white;
-    padding: 10px 0 0 15px;
+    padding: 10px 15px 0 15px;
 
 }
 
@@ -124,7 +124,7 @@ a{
     border-radius: 5px;
     outline: none;
     color: white;
-    padding: 0 0 0 15px;
+    padding: 0 15px 0 15px;
 }
 
 
@@ -242,11 +242,12 @@ a{
 @media (max-width:570px) {
     .formHeading {
         padding-top: 20px;
-        height: 140px;
+        padding-inline: 5px;
+        height: 150px;
     }
 
     .formHeading h1 {
-        font-size: 30px;
+        font-size: 26px;
     }
 
     .formHeading p {
@@ -257,6 +258,10 @@ a{
 }
 
 @media (max-width:480px) {
+    .formHeading h1{
+        /* padding: 0 10px; */
+        font-size: 28px;
+    }
     .formTop{
         width: 100%;
 
